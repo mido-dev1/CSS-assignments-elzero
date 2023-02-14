@@ -1,0 +1,49 @@
+/* ======================================================== */
+
+div.ass1 {
+  background-color: #d4d4d4;
+  color: black;
+  display: inline-block;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  outline: black 5px solid;
+}
+
+div.ass1.child1 {
+  border: red 5px solid;
+}
+
+div.ass1.child2 {
+  border: solid 5px;
+  border-color: #0000ff #008000;
+}
+
+div.ass1.child3 {
+  border: dashed 5px;
+  border-color: red #008000 #0000ff yellow;
+}
+
+/* ======================================================== */
+
+div.ass2 {
+  background-color: #eeeeee;
+  width: 400px;
+  outline: 10px #eee solid;
+  border-left: 5px solid;
+  margin: 25px;
+  padding: 8px;
+}
+
+div.ass2.child1 {
+  border-left-color: #e91e63;
+}
+
+div.ass2.child2 {
+  /* display: none; */
+  visibility: hidden;
+}
+
+div.ass2.child3 {
+  border-left-color: #009688;
+}
