@@ -1,0 +1,26 @@
+/* ======================================================== */
+
+.parent .child .title {
+  color: red;
+}
+
+.parent .title {
+  color: #00f;
+}
+
+.parent p,
+.parent + .title {
+  color: green;
+}
+
+/* ======================================================== */
+
+p.ass2 {
+  padding: 10px;
+  max-height: 40px;
+  max-width: 400px;
+  width: fit-content;
+  background-color: brown;
+  color: #fff;
+  overflow: hidden;
+}
