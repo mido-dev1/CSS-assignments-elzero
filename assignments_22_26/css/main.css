@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+}
+
+/* ======================================================== */
+
+div.ass1 {
+  padding: 20px;
+  border: 2px solid #ff5722;
+  text-align: center;
+  width: 400px;
+  margin: 20px auto;
+}
+
+div.ass1.styled {
+  border: 2px solid #009688;
+  padding: 20px;
+}
+
+div.ass1 p {
+  padding: inherit;
+  border: inherit;
+  background-color: #dddddd;
+  margin: 0;
+}
+
+/* ======================================================== */
+
+div.ass2 p[class^='class']{
+  font-size: 40px;
+  text-align: center;
+  margin: 12px;
+}
+
+div.ass2 p.class1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+div.ass2 p.class2 {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 700;
+}
+
+div.ass2 p.class3 {
+  font-family: 'Jomhuria', cursive;
+  font-weight: 400;
+}
+
+/* ======================================================== */
+
+html {
+  font-size: 20px;
+}
+
+div.ass3 {
+  text-align: center;
+}
+
+div.ass3 div.class1 {
+  font-size: 2.5rem;
+}
+
+div.ass3 div.class2 {
+  font-size: 2rem;
+}
+
+div.ass3 div.class3 {
+  font-size: 1.5rem;
+}
+
+
+
