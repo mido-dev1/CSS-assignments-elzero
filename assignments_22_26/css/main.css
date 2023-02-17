@@ -26,26 +26,22 @@ div.ass1 p {
 
 /* ======================================================== */
 
-div.ass2 p[class^='class']{
+div.ass2 p[class^="class"] {
   font-size: 40px;
   text-align: center;
   margin: 12px;
 }
 
 div.ass2 p.class1 {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-style: italic;
+  font-family: "Open Sans", sans-serif;
 }
 
 div.ass2 p.class2 {
-  font-family: 'Cairo', sans-serif;
-  font-weight: 700;
+  font-family: "Cairo", sans-serif;
 }
 
 div.ass2 p.class3 {
-  font-family: 'Jomhuria', cursive;
-  font-weight: 400;
+  font-family: "Jomhuria", cursive;
 }
 
 /* ======================================================== */
@@ -69,6 +65,3 @@ div.ass3 div.class2 {
 div.ass3 div.class3 {
   font-size: 1.5rem;
 }
-
-
-
