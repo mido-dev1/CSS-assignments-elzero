@@ -1,0 +1,62 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+/* ======================================================== */
+
+.clear {
+  clear: both;
+  padding-bottom: 15px;
+}
+
+.parent {
+  width: 1000px;
+  padding: 0;
+  background-color: #eee;
+}
+
+.child {
+  background-color: #ddd;
+  padding: 15px 0;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-weight: bold;
+  float: left;
+}
+
+.one {
+  width: calc((100% - (15px + 15px)));
+}
+
+.two {
+  width: calc((100% - (15px * 3 + 15px)) / 3);
+}
+
+.three {
+  width: calc((100% - (15px * 2 + 15px)) / 2);
+}
+
+.four {
+  width: calc((100% - (15px * 4 + 15px)) / 4);
+}
+
+/* ======================================================== */
+
+div.ass2 {
+  margin: 20px auto;
+  width: 300px;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 20px;
+  background-color: hsl(0, 0%, 70%);
+  color: black;
+}
+
+.ass2.one {
+  background-color: hsl(0 0% 70% / 0.1);
+}
+
+.ass2.two {
+  opacity: 0.1;
+}
