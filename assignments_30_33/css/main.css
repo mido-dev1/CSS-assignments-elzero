@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ======================================================== */
+
+.ass1 {
+  height: 150px;
+}
+
+.ass1 div {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+div.green {
+  background-color: #009688;
+  left: 30px;
+  top: 30px;
+  z-index: 2;
+}
+
+div.red {
+  background-color: #f44336;
+  top: 40px;
+  left: 40px;
+  z-index: 3;
+}
+
+div.blue {
+  background-color: #03a9f4;
+  left: 20px;
+  top: 20px;
+  z-index: 1;
+}
+
+div.black {
+  background-color: #333;
+  left: 20px;
+  top: 30px;
+}
+
+/* ======================================================== */
+
+.ass2 {
+  width: 400px;
+  position: relative;
+  background-color: #eee;
+  line-height: 2;
+  text-align: center;
+  padding: 15px;
+  margin: 20px auto;
+  border: 2px solid;
+  border-color: #f44336 #2196f3;
+}
+
+.ass2 span {
+  background-color: #2196f3;
+  display: inline-block;
+  position: absolute;
+  width: 30px;
+  height: 25px;
+  color: white;
+  line-height: 25px;
+}
+
+.ass2 span.top-left {
+  left: -15px;
+  top: -12.5px;
+}
+
+.ass2 span.bottom-left {
+  left: -15px;
+  bottom: -12.5px;
+}
+
+.ass2 span.top-right {
+  right: -15px;
+  top: -12.5px;
+}
+
+.ass2 span.bottom-right {
+  right: -15px;
+  bottom: -12.5px;
+}
+
+.ass2 span.top-right,
+.ass2 span.bottom-right {
+  border-left: 2px solid #f44336;
+}
+
+.ass2 span.bottom-left,
+.ass2 span.top-left {
+  border-right: 2px solid #f44336;
+}
+
+/* ======================================================== */
+
+ul.ass3 {
+  width: 400px;
+  margin: 20px auto;
+  padding: 0;
+}
+
+ul.ass3 .none {
+  list-style-type: none;
+  background-color: #eee;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+li.none ol {
+  padding-left: 30px;
+}
+
+li.none ul {
+  padding: 0;
+}
+
+li.none li {
+  background-color: #fff;
+  margin: 5px;
+  padding: 5px;
+}
+
+li.none ul li {
+  list-style-position: inside;
+}
+
+/* ======================================================== */
+
+table {
+  width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 3px solid #009688;
+}
+
+table caption {
+  font-weight: bold;
+  margin: 20px;
+}
+
+table th {
+  background-color: #404040;
+  color: #fff;
+  padding: 15px;
+}
+
+table td {
+  background-color: #eee;
+  padding: 20px;
+}
+
+table img {
+  width: 50px;
+}
+
+table td span {
+  display: inline-block;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 8px;
+}
+
+table td span.blue {
+  background-color: #03a9f4;
+}
+
+table td span.red {
+  background-color: #e91e63;
+}
