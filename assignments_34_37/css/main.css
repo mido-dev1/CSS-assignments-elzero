@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*  */
+
+.ass1 div {
+  background-color: #eee;
+  width: 300px;
+  height: 60px;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 60px;
+}
+
+.ass1 div:empty {
+  background-color: #f00;
+}
+
+/*  */
+
+.ass2 div {
+  width: fit-content;
+  margin: 20px auto;
+  padding: 15px 30px;
+  background-color: #d4d4d4;
+}
+
+.ass2 div::first-letter {
+  color: #fff;
+  background-color: #f00;
+  font-weight: bold;
+  padding: 10px;
+  margin-left: -45px;
+  margin-right: 15px;
+}
+
+/*  */
+
+.ass3 p {
+  background-color: #efefef;
+  padding: 10px;
+  position: relative;
+  margin-left: 100px;
+  border-left: 4px solid #e91e63;
+}
+
+.ass3 p::before {
+  content: attr(data-person);
+  position: absolute;
+  background-color: #dddddd;
+  left: -100px;
+  width: 70px;
+  text-align: center;
+  padding: 5px 0;
+  top: 5px;
+}
+
+.ass3 p::after {
+  content: "";
+  border: 10px solid;
+  border-color: transparent #e91e63 transparent transparent;
+  position: absolute;
+  left: -21px;
+}
+
+/*  */
+
+.ass4 p {
+  background-color: #efefef;
+  padding: 15px 15px 15px 0;
+  margin: 5px;
+  border-right: 4px solid #f44336;
+  counter-increment: counter;
+  position: relative;
+}
+
+.ass4 p::before {
+  content: counter(counter);
+  background-color: #f44336;
+  color: #fff;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin-right: 15px;
+}
