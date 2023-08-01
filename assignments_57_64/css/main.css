@@ -1,0 +1,268 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ======================================================== */
+
+.ass1 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template: auto 1fr / repeat(3, auto);
+}
+
+.ass1 .grid div {
+  background-color: #607d8b;
+  color: #fff;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 20px;
+  counter-increment: numbers;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ass1 .grid div::before {
+  content: "Element " counter(numbers);
+}
+
+/* ======================================================== */
+
+.ass2 .layout {
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  display: grid;
+  grid-template: auto 1fr auto / 75% 25%;
+  color: #fff;
+}
+
+.ass2 .layout * {
+  padding: 20px;
+}
+
+.ass2 .layout header {
+  background-color: #03a9f4;
+  grid-column: 1 / 3;
+}
+
+.ass2 .layout header::before {
+  content: "Header";
+}
+
+.ass2 .layout section {
+  background-color: #ff5722;
+}
+
+.ass2 .layout section::before {
+  content: "Section";
+}
+
+.ass2 .layout aside {
+  background-color: #607d8b;
+}
+
+.ass2 .layout aside::before {
+  content: "Aside";
+}
+
+.ass2 .layout footer {
+  background-color: #009688;
+  grid-column: 1 / 3;
+}
+
+.ass2 .layout footer::before {
+  content: "Footer";
+}
+
+/* ======================================================== */
+
+.ass3 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template: 1fr auto / auto 1fr 1fr auto;
+  color: #fff;
+}
+
+.ass3 .grid div {
+  background-color: #403f3f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* ======================================================== */
+
+.ass4 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  grid-template: repeat(6, auto) / repeat(3, 1fr);
+  color: #fff;
+}
+
+.ass4 .grid div {
+  background-color: #2196f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.ass4 .grid .one {
+  order: 8;
+  grid-column: span 3;
+}
+
+.ass4 .grid .two {
+  order: 2;
+  grid-column: span 2;
+}
+
+.ass4 .grid .three {
+  order: 3;
+}
+
+.ass4 .grid .four {
+  order: 4;
+}
+
+.ass4 .grid .five {
+  order: 5;
+  grid-area: 3 / 2 / 6 / 4;
+}
+
+.ass4 .grid .six {
+  order: 6;
+}
+
+.ass4 .grid .seven {
+  order: 7;
+}
+
+.ass4 .grid .eight {
+  order: 1;
+  grid-column: 1 / 4;
+}
+
+/* ======================================================== */
+
+.ass5 .grid {
+  background-color: #ddd;
+  padding: 20px;
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+  display: grid;
+  gap: 20px;
+  color: #fff;
+  grid-template: repeat(2, auto) / repeat(2, 1fr);
+  align-content: space-between;
+}
+
+.ass5 .grid div {
+  background-color: #e91e63;
+  font-weight: bold;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ======================================================== */
+
+.ass6 .grid {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin: 50px auto;
+  display: grid;
+  gap: 5px;
+  grid-template: repeat(4, auto) / repeat(4, auto);
+}
+
+.ass6 .grid .revers {
+  background-color: #000;
+  color: #fff;
+}
+
+.ass6 .grid div {
+  padding: 20px;
+  border-bottom: 2px solid #fe4409;
+  background-color: #fff;
+  position: relative;
+}
+
+.ass6 .grid div:nth-child(1) {
+  grid-column: span 2;
+}
+
+.ass6 .grid div:nth-child(3) {
+  grid-row: span 3;
+}
+
+.ass6 .grid div:nth-child(4) {
+  grid-row: 2 / span 2;
+}
+
+.ass6 .grid div:nth-child(5),
+.ass6 .grid div:nth-child(6) {
+  grid-column: 2 / span 2;
+}
+
+.ass6 .grid div h2 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.ass6 .grid div h3 {
+  opacity: 0.5;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.ass6 .grid div p {
+  margin: 10px 0;
+  line-height: 1.5;
+}
+
+.ass6 .grid div p:nth-child(3) {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.ass6 .grid div p:last-child {
+  font-size: 13px;
+}
+
+.ass6 .grid div::after {
+  font-family: "Font Awesome 6 Pro";
+  content: "\22";
+  font-weight: bold;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+  font-size: 25px;
+  opacity: 0.5;
+  transform: rotate(15deg);
+}
