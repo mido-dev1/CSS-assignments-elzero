@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* ======================================================== */
+
+:root {
+  --primary-color-ass1: #ff5722;
+  --primary-color-ass2: #009688;
+}
+
+.ass1 h1 {
+  background-color: var(--primary-color-ass1);
+  width: 150px;
+  color: #fff;
+  padding: 20px;
+  margin: 50px auto;
+  position: relative;
+  font-size: 35px;
+  text-align: center;
+}
+
+.ass1 h1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color-ass1);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: skew(10deg, 10deg);
+  -webkit-transform: skew(10deg, 10deg);
+  -moz-transform: skew(10deg, 10deg);
+  -ms-transform: skew(10deg, 10deg);
+  -o-transform: skew(10deg, 10deg);
+}
+
+.ass1 h1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color-ass1);
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  transform: skew(-10deg, -10deg);
+  -webkit-transform: skew(-10deg, -10deg);
+  -moz-transform: skew(-10deg, -10deg);
+  -ms-transform: skew(-10deg, -10deg);
+  -o-transform: skew(-10deg, -10deg);
+}
+
+/* ======================================================== */
+
+.ass2 h1 {
+  width: 150px;
+  margin: 50px auto;
+  background-color: var(--primary-color-ass2);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+}
+
+.ass2 h1::before {
+  content: "";
+  background-color: var(--primary-color-ass2);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  transform: skewX(20deg);
+  z-index: -1;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+}
+
+.ass2 h1::after {
+  content: "";
+  background-color: var(--primary-color-ass2);
+  padding: 0 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -40px;
+  transform: skewX(20deg);
+  z-index: -1;
+  -webkit-transform: skewX(20deg);
+  -moz-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  -o-transform: skewX(20deg);
+}
+
+/* ======================================================== */
+
+.ass3 {
+  margin: 50px auto;
+}
+
+.class {
+  transform: matrix(3, 0.2679, 0, 3, 20, 100);
+  transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg) skewX(0)
+    scaleY(3);
+  -webkit-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
+    skewX(0);
+  -moz-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
+    skewX(0);
+  -ms-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
+    skewX(0);
+  -o-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
+    skewX(0);
+}
+
+/* ======================================================== */
+
+.ass4 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ass4 div {
+  width: 200px;
+  height: 200px;
+  background-color: #607d8b;
+  color: #fff;
+  border-bottom: 5px solid #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.ass4 div::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  z-index: 1;
+  width: 135px;
+  height: 135px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -moz-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  -o-transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ass4 div::after {
+  content: "Elzero";
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+/* ======================================================== */
+
+.ass5 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  perspective: 600px;
+}
+
+.ass5 div {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  transition: 1s transform;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.ass5.p1 div:hover {
+  transform: translate(-50%, -50%) rotateY(-180deg);
+  -webkit-transform: translate(-50%, -50%) rotateY(-180deg);
+  -moz-transform: translate(-50%, -50%) rotateY(-180deg);
+  -ms-transform: translate(-50%, -50%) rotateY(-180deg);
+  -o-transform: translate(-50%, -50%) rotateY(-180deg);
+}
+
+.ass5 div::before,
+.ass5 div::after {
+  position: absolute;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  backface-visibility: hidden;
+}
+
+.ass5 div::before {
+  content: "Front";
+  background-color: #fa3664;
+}
+
+.ass5.p1 div::after {
+  content: "Back";
+  background-color: #1692fc;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.ass5.p2 div:hover {
+  transform: translate(-50%, -50%) rotateX(-180deg);
+  -webkit-transform: translate(-50%, -50%) rotateX(-180deg);
+  -moz-transform: translate(-50%, -50%) rotateX(-180deg);
+  -ms-transform: translate(-50%, -50%) rotateX(-180deg);
+  -o-transform: translate(-50%, -50%) rotateX(-180deg);
+}
+
+.ass5.p2 div::after {
+  content: "Back";
+  background-color: #1692fc;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+}
