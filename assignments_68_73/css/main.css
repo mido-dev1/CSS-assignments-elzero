@@ -110,14 +110,10 @@
   transform: matrix(3, 0.2679, 0, 3, 20, 100);
   transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg) skewX(0)
     scaleY(3);
-  -webkit-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
-    skewX(0);
-  -moz-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
-    skewX(0);
-  -ms-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
-    skewX(0);
-  -o-transform: translateX(20px) translateY(100px) scaleX(3) skewY(15deg)
-    skewX(0);
+  -webkit-transform: matrix(3, 0.2679, 0, 3, 20, 100);
+  -moz-transform: matrix(3, 0.2679, 0, 3, 20, 100);
+  -ms-transform: matrix(3, 0.2679, 0, 3, 20, 100);
+  -o-transform: matrix(3, 0.2679, 0, 3, 20, 100);
 }
 
 /* ======================================================== */
@@ -191,6 +187,10 @@
   -moz-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
+  -webkit-transition: 1s transform;
+  -moz-transition: 1s transform;
+  -ms-transition: 1s transform;
+  -o-transition: 1s transform;
 }
 
 .ass5.p1 div:hover {
@@ -212,6 +212,7 @@
   height: 100%;
   color: #fff;
   backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .ass5 div::before {
