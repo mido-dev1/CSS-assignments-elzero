@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ======================================================== */
+
+.ass1 .main.red:nth-child(3n + 1) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass2 .parent > .child:nth-child(2) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass3 .parent:nth-child(2) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass4 p:first-child ~ div[title]:not([class]) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass5 div:nth-child(2) div[title] {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass6 div:first-child div:nth-child(3),
+.ass6 div:nth-child(2) div:nth-child(4) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass7 div:first-child div:nth-of-type(2) {
+  color: red;
+}
+
+/* ======================================================== */
+
+.ass8 div :not(h3, :first-child, :last-child) {
+  color: red;
+}
