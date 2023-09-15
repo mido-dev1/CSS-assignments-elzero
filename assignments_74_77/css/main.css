@@ -1,0 +1,316 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.ass1,
+.ass2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+@keyframes spin {
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    -moz-transform: translate(-50%, -50%) rotate(360deg);
+    -ms-transform: translate(-50%, -50%) rotate(360deg);
+    -o-transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* ======================================================== */
+
+.ass1 div {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 5px solid #df2455;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear 0s infinite normal none;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-animation: spin 1s linear 0s infinite normal none;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.ass1 div::before,
+.ass1 div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.ass1 div::before {
+  padding: 7px;
+  border: 5px solid #1b90dc;
+  border-left-color: transparent;
+}
+
+.ass1 div::after {
+  padding: 14px;
+  border: 5px solid #fba100;
+  border-top-color: transparent;
+}
+
+.ass1 div:hover {
+  animation-play-state: paused;
+}
+
+/* ======================================================== */
+
+.ass2 .loader {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.ass2 .one {
+  border-color: #000;
+  padding: 14px;
+  animation: spin 2s linear 0s infinite normal none;
+  -webkit-animation: spin 2s linear 0s infinite normal none;
+}
+
+.ass2 .two {
+  border-color: #fba100;
+  padding: 7px;
+  animation: spin 1.5s linear 0s infinite normal none;
+  -webkit-animation: spin 1.5s linear 0s infinite normal none;
+}
+
+.ass2 .three {
+  border-color: #1b90dc;
+  animation: spin 1s linear 0s infinite normal none;
+  -webkit-animation: spin 1s linear 0s infinite normal none;
+}
+
+.ass2 .one,
+.ass2 .two,
+.ass2 .three {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  border-bottom-color: transparent;
+  animation-play-state: paused;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.ass2 .loader:hover div {
+  animation-play-state: running;
+}
+
+/* ======================================================== */
+
+.ass3 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.ass3 span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eee;
+  border-radius: 50%;
+  border: 5px solid #000;
+  border-bottom-color: transparent;
+  animation: spin 1s linear 0s infinite reverse none;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  -webkit-animation: spin 1s linear 0s infinite reverse none;
+}
+
+/* ======================================================== */
+
+.ass4 {
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.ass4 > div {
+  margin: 10px;
+}
+.ass4 .e {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  position: relative;
+}
+.ass4 .e .p1 {
+  display: flex;
+  flex-direction: column;
+}
+.ass4 .e .p1 div,
+.ass4 .e .p2 div {
+  background-color: #323234;
+  width: 50px;
+  height: 50px;
+}
+.ass4 .e .p2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+.ass4 .l {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  position: relative;
+}
+.ass4 .l .p1 {
+  display: flex;
+  flex-direction: column;
+}
+.ass4 .l .p1 div,
+.ass4 .l .p2 div {
+  background-color: #323234;
+  width: 50px;
+  height: 50px;
+}
+.ass4 .l .p2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+.ass4 .e::before {
+  content: "";
+  position: absolute;
+  background-color: #fea604;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  border: 10px solid #323234;
+  transform: translateX(0) translateY(0);
+}
+.ass4 .l::before {
+  content: "";
+  position: absolute;
+  background-color: #fea604;
+  width: 30px;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  border: 10px solid #323234;
+  transform: translateX(0) translateY(0);
+  visibility: hidden;
+  opacity: 1;
+}
+.ass4:hover .e::before {
+  animation: letter_e 3s linear 0s 1 normal forwards;
+}
+.ass4:hover .l::before {
+  animation: letter_l 3s linear 4s 1 normal forwards;
+}
+@keyframes letter_e {
+  10% {
+    transform: translateX(-300%) translateY(0);
+  }
+  20% {
+    transform: translateX(-300%) translateY(300%);
+  }
+  30% {
+    transform: translateX(0%) translateY(300%);
+  }
+  40% {
+    transform: translateX(-300%) translateY(300%);
+  }
+  50% {
+    transform: translateX(-300%) translateY(600%);
+  }
+  60% {
+    transform: translateX(0%) translateY(600%);
+  }
+  70% {
+    transform: translateX(-300%) translateY(600%);
+  }
+  80% {
+    transform: translateX(-300%) translateY(300%);
+  }
+  90% {
+    transform: translateX(-300%) translateY(0%);
+  }
+  100% {
+    transform: translateX(0%) translateY(0%);
+  }
+}
+@keyframes letter_l {
+  0% {
+    visibility: hidden;
+  }
+  20% {
+    transform: translateX(0%) translateY(0);
+    visibility: visible;
+  }
+  40% {
+    transform: translateX(-300%) translateY(0);
+  }
+  80% {
+    opacity: 1;
+    transform: translateX(-300%) translateY(-600%);
+  }
+  100% {
+    transform: translateX(-300%) translateY(-600%);
+    opacity: 0;
+  }
+}
