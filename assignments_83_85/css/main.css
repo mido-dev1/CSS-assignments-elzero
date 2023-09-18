@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  margin: 5px;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* ======================================================== */
+
+@media print {
+  .ass1 .assign-one {
+    font-size: 40px;
+  }
+}
+
+/* ======================================================== */
+
+.ass2 .parent {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ass2 .parent .child {
+  width: 100%;
+  background-color: #eee;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (width >= 992px) {
+  .ass2 .parent .child {
+    width: calc(50% - 20px);
+  }
+  .ass2 .parent .child h4 {
+    color: red;
+  }
+}
+
+@media (width >= 1200px) {
+  .ass2 .parent .child {
+    width: calc(25% - 20px);
+  }
+  .ass2 .parent .child h4 {
+    color: #129d90;
+  }
+}
+
+/* ======================================================== */
+
+.ass3 .parent {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ass3 .parent .child {
+  width: 100%;
+  background-color: #eee;
+  margin: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.ass3 .parent .child:first-child {
+  width: 100%;
+}
+
+@media (width >= 992px) {
+  .ass3 .parent .child {
+    width: calc(100% / 3 - 20px);
+  }
+  .ass3 .parent .child h4 {
+    color: red;
+  }
+}
+
+@media (width >= 1200px) {
+  .ass3 .parent .child {
+    width: calc(50% - 20px);
+  }
+  .ass3 .parent .child h4 {
+    color: #129d90;
+  }
+  .ass3 .parent .child:last-child {
+    width: 100%;
+  }
+}
